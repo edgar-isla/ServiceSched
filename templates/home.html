@@ -1,0 +1,81 @@
+<!--<div class="alert alert-success auto-width">-->
+
+    <!--&lt;!&ndash; lists button bar &ndash;&gt;-->
+    <!--<button class="btn" ng-repeat="list in hc.lists" ng-bind="list"-->
+            <!--ng-click="hc.currentList = $index;"-->
+            <!--ng-class="{ 'btn-primary': (hc.currentList == $index) }"></button>-->
+    <!--<input type="text" ng-model="newListText" size="10">-->
+    <!--<td-addlistbutton></td-addlistbutton><br />-->
+    <!--<br />-->
+
+    <!--<table class="table table-striped table-condensed auto-width example-animate-container-repeat">-->
+        <!--<tr ng-repeat="item in filteredItems = (hc.items | filter:{listNum: hc.currentList}) track by item.itemNum"-->
+            <!--td-item item="item" index="$index+1" class="animate-repeat"></tr>-->
+        <!--&lt;!&ndash; if no items in list, show message &ndash;&gt;-->
+        <!--<tr td-nonefound ng-hide="filteredItems.length"></tr>-->
+        <!--&lt;!&ndash;<tr ng-hide="filteredItems.length"><td><i>No items in this list</i></td></tr>&ndash;&gt;-->
+    <!--</table>-->
+
+    <!--<input type="text" ng-model="hc.newItemText" ng-keyup="hc.keyPress($event)">-->
+    <!--<button class="btn btn-xs btn-success" ng-click="hc.addItem()">add item</button>-->
+    <!--<button class="btn btn-danger btn-xs right" ng-click="hc.removeCompleted(hc.currentList)">Remove Completed</button>-->
+
+<!--</div>-->
+<div>
+
+    <h1 class="head">Click to see your Schedule.</h1>
+
+    <div class="img-responsive" ng-controller="ChatCtrl"
+         style="background: url('Pictures/toyota-logo-transparent-wallpaper-6.jpg') no-repeat top center  fixed;
+     background-size: cover;">
+
+
+        <div>
+
+            <div class="icon2">
+                <img src="Pictures/images.png" style="border-radius: 50%; height: 20%; width: 20%; border: 2px black solid">
+                <!--<a  href="EmpSched/Edgar.html" class=" btnLarge ">Alex</a>-->
+                <input  class="btnLarge"  type="button" onclick="location.href='EmpSched/Edgar.html';" value="Alex " />
+            </div>
+            <div class="icon">
+                <img src="Pictures/images.png" style="border-radius: 50%; height: 20%; width: 20%; border: 2px black solid">
+                <input  class="btnLarge"  type="button" onclick="location.href='EmpSched/Edgar.html';" value="Brian" />
+            </div>
+            <div class="icon">
+                <img src="Pictures/download.jpe" style="border-radius: 50%; height: 20%; width: 20%; border: 2px black solid">
+                <input  class="btnLarge"  type="button" onclick="location.href='EmpSched/Edgar.html';" value="Britt" />
+            </div>
+            <div class="icon">
+                <img src="Pictures/images.png" style="border-radius: 50%; height: 20%; width: 20%; border: 2px black solid">
+                <input  class="btnLarge"  type="button" onclick="location.href='EmpSched/Edgar.html';" value="Colton" />
+            </div>
+            <div class="icon">
+                <img src="Pictures/images.png" style="border-radius: 50%; height: 20%; width: 20%; border: 2px black solid">
+                <input  class="btnLarge"  type="button" onclick="location.href='EmpSched/Edgar.html';" value="Edgar" />
+            </div>
+            <div class="icon">
+                <img src="Pictures/images.png" style="border-radius: 50%; height: 20%; width: 20%; border: 2px black solid">
+                <input  class="btnLarge"  type="button" onclick="location.href='EmpSched/Edgar.html';" value="Dalton" />
+            </div>
+            <div class="icon">
+                <img src="Pictures/images.png" style="border-radius: 50%; height: 20%; width: 20%; border: 2px black solid">
+                <input  class="btnLarge"  type="button" onclick="location.href='EmpSched/Edgar.html';" value="Josh" />
+            </div>
+            <div class="icon">
+                <img src="Pictures/images.png" style="border-radius: 50%; height: 20%; width: 20%; border: 2px black solid">
+                <input  class="btnLarge"  type="button" onclick="location.href='EmpSched/Edgar.html';" value="Malek" />
+            </div>
+            <div class="icon">
+                <img src="Pictures/images.png" style="border-radius: 50%; height: 20%; width: 20%; border: 2px black solid">
+                <input  class="btnLarge"  type="button" onclick="location.href='EmpSched/Edgar.html';" value="Maxs" />
+            </div>
+
+
+
+        </div>
+
+    </div>
+    <div style=" background-color: black; color: white; padding: 2% 10% 2% 0; margin-top: 3%; text-align: right">
+        <h1>Created By EdgarI</h1>
+    </div>
+</div>
