@@ -39,7 +39,7 @@
                 })
                 .state("dalton", {
                     url: "/dalton",
-                    templateUrl: "templates/EmpSched/Dalton.html"
+                    templateUrl: "templates/EmpSched/Dolton.html"
                 })
                 .state("edgar", {
                     url: "/edgar",
@@ -49,13 +49,16 @@
                     url: "/malek",
                     templateUrl: "templates/EmpSched/Malek.html"
                 })
-                .state("josh", {
-                    url: "/josh",
-                    templateUrl: "templates/EmpSched/Josh.html"
+                .state("mitch", {
+                    url: "/mitch",
+                    templateUrl: "templates/EmpSched/Mitch.html"
                 })
-                .state("Max", {
-                    url: "/Max",
+                .state("max", {
+                    url: "/max",
                     templateUrl: "templates/EmpSched/Max.html"
+                }) .state("steve", {
+                    url: "/steve",
+                    templateUrl: "templates/EmpSched/Steve.html"
                 })
                 .state("about", {
                     url: "/about",
