@@ -56,6 +56,9 @@
                 .state("max", {
                     url: "/max",
                     templateUrl: "templates/EmpSched/Max.html"
+                }).state("funnyImage", {
+                    url: "/funnyImage",
+                    templateUrl: "templates/funnyImage.html"
                 }) .state("steve", {
                     url: "/steve",
                     templateUrl: "templates/EmpSched/Steve.html"
