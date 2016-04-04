@@ -2,13 +2,16 @@
     'use strict';
 
     angular.module('basicApp', [
+        "firebase",
         "ui.router",
         "navController",
         "homeController",
         "homeService",
         "homeDirectives",
         "ngAnimate",
-        "ngStorage"
+        "ngStorage",
+        "ui.bootstrap",
+        "angucomplete"
     ])
 
     .config(["$stateProvider", "$urlRouterProvider",
@@ -39,7 +42,7 @@
                 })
                 .state("dalton", {
                     url: "/dalton",
-                    templateUrl: "templates/EmpSched/Dolton.html"
+                    templateUrl: "templates/EmpSched/Dalton.html"
                 })
                 .state("edgar", {
                     url: "/edgar",
@@ -49,19 +52,13 @@
                     url: "/malek",
                     templateUrl: "templates/EmpSched/Malek.html"
                 })
-                .state("mitch", {
-                    url: "/mitch",
-                    templateUrl: "templates/EmpSched/Mitch.html"
+                .state("josh", {
+                    url: "/josh",
+                    templateUrl: "templates/EmpSched/Josh.html"
                 })
-                .state("max", {
-                    url: "/max",
+                .state("Max", {
+                    url: "/Max",
                     templateUrl: "templates/EmpSched/Max.html"
-                }).state("funnyImage", {
-                    url: "/funnyImage",
-                    templateUrl: "templates/funnyImage.html"
-                }) .state("steve", {
-                    url: "/steve",
-                    templateUrl: "templates/EmpSched/Steve.html"
                 })
                 .state("about", {
                     url: "/about",
