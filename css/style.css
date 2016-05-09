@@ -1,11 +1,25 @@
 .bo{border-bottom: black solid 2px }
 .bor{border-left: darkred solid 4px; border-top: darkred solid 3px; border-right: darkred solid 4px}
 .lgFont{font-size: large}
+.green{background-color: mediumseagreen}
 .centerVertical{
     position: relative;
     top: 50%;
     transform: translateY(-50%)
 }
+/*@media print {*/
+    /*body * {*/
+        /*visibility: hidden;*/
+    /*}*/
+    /*#section-to-print, #section-to-print * {*/
+        /*visibility: visible;*/
+    /*}*/
+    /*#section-to-print {*/
+        /*position: absolute;*/
+        /*left: 0;*/
+        /*top: 0;*/
+    /*}*/
+
 .center{text-align: center}
 .grey{background-color: #d7d7d7
 }

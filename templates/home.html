@@ -1,4 +1,5 @@
 <div class="large-padded-row">
+    <button class="btn btn-success" ui-sref="print">Print Page</button>
     <h3>Search Name</h3>
 
     <div class="padded-row">
@@ -37,7 +38,7 @@
         </thead>
         <tbody>
         <tr class="bo" ng-repeat="worker in hc.workers">
-            <td><span class="label label-info lgFont">{{worker.firstName}}</span><br>
+            <td ng-class="{'green': hc.changeClass[$index]}" ><span class="label label-info lgFont">{{worker.firstName}}</span><br>
                 <!--<button class="btn btn-danger btnMar" ng-click="hc.workers.$remove(worker)">x</button>-->
                 <button class="btn btn-success btnMar" ng-click="hc.send(worker.Id, $index)">SAVE</button>
             </td>
@@ -81,37 +82,6 @@
                         class="nIs" type="text" ng-model="hc.SatHalfE[$index]"><span class="badge">pm</span>
             </td>
         </tr>
-
-
-        <div class="container">
-            <table class="table">
-                <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Monday</th>
-                    <th>Tuesday</th>
-                    <th>Wednesday</th>
-                    <th>Thursday</th>
-                    <th>Friday</th>
-                    <th>Saturday</th>
-                </tr>
-                </thead>
-                <!--Name-->
-                <tbody>
-                <tr ng-repeat="worker in hc.workers">
-                    <td><span class="label label-info lgFont">{{worker.firstName}}</span></td>
-                    <td>Start: {{worker.MondayStart}} <br>End: {{worker.MondayEnd}}</td>
-                    <td>Start: {{worker.TuesdayStart}} <br>End: {{worker.TuesdayEnd}}</td>
-                    <td>Start: {{worker.WednesdayStart}} <br>End: {{worker.WednesdayEnd}}</td>
-                    <td>Start: {{worker.ThursdayStart}} <br>End: {{worker.ThursdayEnd}}</td>
-                    <td>Start: {{worker.FridayStart}} <br>End: {{worker.FridayEnd}}</td>
-                    <td>Start: {{worker.SaturdayStart}} <br>End: {{worker.SaturdayEnd}}</td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
-
-
         </tbody>
     </table>
 </div>

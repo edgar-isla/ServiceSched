@@ -17,11 +17,13 @@
         };
     }]).controller('homeController', homeController);
 
-    homeController.$inject = ['$firebase','myData'];
-    function homeController( $firebaseArray, myData) {
+    homeController.$inject = ['$firebase','myData', "$localStorage"];
+    function homeController( $firebaseArray, myData, $localStorage) {
         var hc = this;
         var ref = new Firebase("https://authservice.firebaseio.com/");
         hc.workers = $firebaseArray(ref);
+        $localStorage.workers=hc.workers;
+        console.log($localStorage.workers);
         //hc.people = myData.getNames; // above factory that I may implement
         //hc.people= myData.getNames;
         hc.addWorkers = addWorkers;
@@ -62,10 +64,12 @@
         hc.SatHalfS=[];
         hc.SatHourE=[]; // create array for all the
         hc.SatHalfE=[];
+        hc.changeClass=[];
 
         hc.lastId="";
         function send(id, index){
             hc.currentId=id;
+            hc.changeClass[index]=true;
 
             console.log("Monday start time: "+hc.MonHourS[index]+":"+ hc.MonHalfS[index]);
             console.log("Monday end time: "+hc.MonHourE[index]+":"+ hc.MonHalfE[index]);
@@ -150,6 +154,8 @@
             hc.SatHalfS[i]=30;
             hc.SatHourE[i]=5; // create array for all the
             hc.SatHalfE[i]=30;
+
+            hc.changeClass[i]=false;
         }
         function saveWeek(){
             return hc.workers.$add({
@@ -171,8 +177,20 @@
             hc.workers.$remove(id)
         }
     getNames();
+        hc.printDiv = function(divName) {
+            console.log(divName);
+            var printContents = document.getElementById(divName).innerHTML;
+            var originalContents = document.body.innerHTML;
+
+            document.body.innerHTML = printContents;
+
+            window.print();
+
+            document.body.innerHTML = originalContents;
+        }
 
     }
+
 
 
 }());

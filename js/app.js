@@ -10,6 +10,7 @@
         "homeDirectives",
         "ngAnimate",
         "ngStorage",
+        "printController",
         "ui.bootstrap",
         "angucomplete"
     ])
@@ -23,6 +24,10 @@
                     url: "/home",
                     templateUrl: "templates/home.html",
                     controller: "homeController as hc"
+                })
+                .state("print", {
+                    url: "/print",
+                    templateUrl: "templates/print.html"
                 })
                 .state("alex", {
                     url: "/alex",
