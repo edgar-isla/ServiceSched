@@ -1,0 +1,30 @@
+
+<div id="printableArea" class="container" ng-controller="printController as pc">
+    {{pc.name}}
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+        </tr>
+        </thead>
+        <!--Name-->
+        <tbody>
+        <tr ng-repeat="worker in pc.workers">
+            <td><span class="label label-info lgFont">{{worker.firstName}}</span></td>
+            <td>Start: {{worker.MondayStart}} <br>End: {{worker.MondayEnd}}</td>
+            <td>Start: {{worker.TuesdayStart}} <br>End: {{worker.TuesdayEnd}}</td>
+            <td>Start: {{worker.WednesdayStart}} <br>End: {{worker.WednesdayEnd}}</td>
+            <td>Start: {{worker.ThursdayStart}} <br>End: {{worker.ThursdayEnd}}</td>
+            <td>Start: {{worker.FridayStart}} <br>End: {{worker.FridayEnd}}</td>
+            <td>Start: {{worker.SaturdayStart}} <br>End: {{worker.SaturdayEnd}}</td>
+        </tr>
+        </tbody>
+    </table>
+    <button class="btn btn-warning" ng-click="pc.printDiv();">Print Div</button>
+</div>

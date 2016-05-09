@@ -2,13 +2,17 @@
     'use strict';
 
     angular.module('basicApp', [
+        "firebase",
         "ui.router",
         "navController",
         "homeController",
         "homeService",
         "homeDirectives",
         "ngAnimate",
-        "ngStorage"
+        "ngStorage",
+        "printController",
+        "ui.bootstrap",
+        "angucomplete"
     ])
 
     .config(["$stateProvider", "$urlRouterProvider",
@@ -20,6 +24,10 @@
                     url: "/home",
                     templateUrl: "templates/home.html",
                     controller: "homeController as hc"
+                })
+                .state("print", {
+                    url: "/print",
+                    templateUrl: "templates/print.html"
                 })
                 .state("alex", {
                     url: "/alex",

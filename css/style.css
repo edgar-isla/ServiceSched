@@ -1,3 +1,37 @@
+.bo{border-bottom: black solid 2px }
+.bor{border-left: darkred solid 4px; border-top: darkred solid 3px; border-right: darkred solid 4px}
+.lgFont{font-size: large}
+.green{background-color: mediumseagreen}
+.centerVertical{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%)
+}
+/*@media print {*/
+    /*body * {*/
+        /*visibility: hidden;*/
+    /*}*/
+    /*#section-to-print, #section-to-print * {*/
+        /*visibility: visible;*/
+    /*}*/
+    /*#section-to-print {*/
+        /*position: absolute;*/
+        /*left: 0;*/
+        /*top: 0;*/
+    /*}*/
+
+.center{text-align: center}
+.grey{background-color: #d7d7d7
+}
+.greys{background-color: #a4a4a4
+}
+.greyss{background-color: #eaeaea
+}
+.btnMar{margin-top: 7%}
+.nI{width: 28%;margin-bottom: 1%}
+.nIs{width: 18%;margin-bottom: 1%}
+.inp{width: 45%}
+.
 h3 { margin-top: 0; }
 h4 { margin-top: 6px !important; }
 .top-margin { margin-top: 50px; }
